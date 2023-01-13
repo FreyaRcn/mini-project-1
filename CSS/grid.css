@@ -9,7 +9,7 @@ body{
     font-size: 16px;
     line-height: 1.5;
     color: black;
-    background: Black;
+    background: #F2DFBE;
 }
 
 .container{
@@ -25,25 +25,25 @@ body{
    margin-top: 20px;
    left: 50%;
    transform: translate(-50%, -50%);
-   padding: 10px;
+   padding: 30px;
   }
   
-  .navMenu a {
-    color: #f6f4e6;
+.navMenu a {
+    color: white;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1.5em;
     text-transform: uppercase;
     font-weight: 700;
     display: inline-block;
-    width: 80px;
+    width: 100px;
     transition: all 0.2s ease-in-out;
   }
   
-  .navMenu a:hover {
+.navMenu a:hover {
     color: #f8cf04;
   }
   
-  .navMenu .dot {
+.navMenu .dot {
     width: 6px;
     height: 6px;
     background: #fddb3a;
@@ -53,32 +53,31 @@ body{
     
   }
   
-  .navMenu a:nth-child(1):hover ~ .dot {
-    transform: translateX(30px);
+.navMenu a:nth-child(1):hover ~ .dot {
+    transform: translateX(35px);
     transition: all 0.2s ease-in-out;
     opacity: 1;
   }
   
-  .navMenu a:nth-child(2):hover ~ .dot {
-    transform: translateX(110px);
+.navMenu a:nth-child(2):hover ~ .dot {
+    transform: translateX(135px);
     transition: all 0.2s ease-in-out;
     opacity: 1;
   }
   
-  .navMenu a:nth-child(3):hover ~ .dot {
-    transform: translateX(200px);
+.navMenu a:nth-child(3):hover ~ .dot {
+    transform: translateX(245px);
     transition: all 0.2s ease-in-out;
     opacity: 1;
   }
   
-  .navMenu a:nth-child(4):hover ~ .dot {
-    transform: translateX(285px);
+.navMenu a:nth-child(4):hover ~ .dot {
+    transform: translateX(355px);
     transition: all 0.2s ease-in-out;
     opacity: 1;
   }
 
-
-  .search_bar input[type="text"]{
+.search_bar input[type="text"]{
     position:relative; 
     display: flex; 
     left:80%;
@@ -89,7 +88,7 @@ body{
     display: none;
     }
 
-    .search_bar img{
+.search_bar img{
         position: absolute;
         top: 50%;
         left: 50%;
@@ -111,11 +110,11 @@ body{
 }
 
 .item{
-    background: black;
-    color: white;
+    background: white;
+    color: black;
     font-size: 20px;
     padding: 0;
-    border: skyblue 1px solid;
+    border: none;
     box-shadow: rgba(17, 12, 46, 0.15) 1px;
     margin-bottom: 10px;
 }
@@ -125,11 +124,22 @@ h1{
     margin-left: 50px;
     font-weight: 900;
     font-size: 4.5rem;
+    color: #F5DFBB;
+}
+
+h3{
+  margin-top: 30px;
+    margin-left: 50px;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #81924A;
 }
 
 p{
     margin-top: 5px;
     margin-left: 50px;
+    color: white;
+    font-weight: 500;
 }
 
 .button{
@@ -144,7 +154,8 @@ p{
     height: 30px;
     cursor: pointer;
     background: none;
-    color: black;
+    color: #F5DFBB;
+    font-size: 1rem;
     font-weight: 700;
     border-radius: 30px;
     border: 1px solid;
@@ -152,7 +163,8 @@ p{
 
 .btn-1:hover, .btn-2:hover{
     width: 230px;
-    background: #f8cf04;
+    background: #81924A;
+    color:#562C2C;
     transition: 0.6s ease-out;
 }
 
@@ -164,7 +176,7 @@ p{
     grid-column: 1/5;
 }
 .item:nth-of-type(1){
-    background-color: white;
+    background-color:  #F2DFBE;
     background: url(../Images/Food-hero.jpg)no-repeat;
     background-size: cover;
     opacity: 1;
@@ -214,6 +226,7 @@ p{
 .item:nth-of-type(2){
     grid-column: 1/4;
     grid-row: 2/6;
+    background-color: #DCC9B1;
     
 }
 
@@ -223,12 +236,13 @@ p{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-top: 50px;
   }
   
   .card {
     margin: 30px auto;
-    width: 300px;
-    height: 300px;
+    width: 230px;
+    height: 230px;
     border-radius: 40px;
   box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
     cursor: pointer;
@@ -292,24 +306,174 @@ p{
     height: 650px;
     grid-column: 4/5;
     grid-row: 4/6; 
+    background-color:  #DCC9B1;
+    
 }
 /*Contact Us!*/
 .item:nth-of-type(4){
     height: 200px;
-    grid-column: 2/5;
+    grid-column: 1/5;
     grid-row: 6/8;  
+    background-color: #DCC9B1;
+    background: url(../Images/Contact\ Us-26\ Apr.jpg);
+    margin-top: 20px;
 }
+
+
+
+form {
+   max-width: 600px;
+   text-align: center;
+   margin: 20px auto;
+  
+  input, textarea {
+     border:0; outline:0;
+     padding: 1em;
+     @include border-radius(8px);
+     display: block;
+     width: 100%;
+     margin-top: 1em;
+     font-family: 'Merriweather', sans-serif;
+     @include box-shadow(0 1px 1px rgba(black, 0.1));
+     resize: none;
+    
+    &:focus {
+       @include box-shadow(0 0px 2px rgba($red, 1)!important);
+    }
+  }
+  
+  #input-submit {
+     color: white; 
+     background: $red;
+     cursor: pointer;
+    
+    &:hover {
+       @include box-shadow(0 1px 1px 1px rgba(#aaa, 0.6)); 
+    }
+  }
+  
+  textarea {
+      height: 126px;
+  }
+}
+
+
+.half {
+  float: left;
+  width: 48%;
+  margin-bottom: 1em;
+}
+
+.right { width: 50%; }
+
+.left {
+     margin-right: 2%; 
+}
+
+/*
+@media (max-width: 480px) {
+  .half {
+     width: 100%; 
+     float: none;
+     margin-bottom: 0; 
+  }
+}
+*/
+
+
+
+
 /*Sponsors*/
 .item:nth-of-type(5){
     height: 100px;
     grid-column: 4/5;
     grid-row: 2/4; 
+    background-color:  #DCC9B1;
 }
-/*Socials*/
-.item:nth-of-type(6){
-    grid-column: 1/2;
-    grid-row: 6/8;
-    
+
+/*
+.sponsor-list {
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
+
+ 
+.sponsor {
+  margin: 5px auto;
+  width: 20px;
+  height: 20px;
+}
+*/
+
+
+.logo {
+  width: 30px;
+  height: 30px;
+  animation: scroll 60s linear infinite;
+}
+
+.slide-track {
+  width: 250px;
+  display: flex;
+  gap: 1em;
+  overflow: hidden;
+}
+
+.slider {
+  margin-top: 5px;
+  background-color:  #DCC9B1;
+  padding: 1em 3em;
+}
+
+@keyframes scroll {
+  0% {transform: translateX(0);}
+  100% {transform: translatex(-1000%)}
+}
+
+@import "compass/css3";
+
+
+.gallery {
+  width: 350px;
+  height: 580px;
+  margin: 0 auto;
+  padding: 5px;
+  background:  #DCC9B1;
+}
+
+.gallery > div {
+  position: relative;
+  float: left;
+  padding: 5px;
+}
+
+.gallery > div > img {
+  width: 160px;
+  transition: .1s transform;
+  transform: translateZ(0);
+}
+
+.gallery > div:hover {
+  z-index: 1;
+}
+
+.gallery > div:hover > img {
+  transform: scale(1.5,1.5);
+  transition: .3s transform;
+}
+
+.cf:before, .cf:after {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+
+.cf:after {
+    clear: both;
+}
+
 
 
